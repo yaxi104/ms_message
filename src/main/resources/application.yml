@@ -1,0 +1,39 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /messages
+
+spring:
+  cloud:
+    compatibility-verifier:
+      enabled: false
+
+jwt:
+  secret: "clave-super-secreta-cambia-en-prod"
+  token-validity: 36000000  # 10 horas en milisegundos
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    persistAuthorization: true
+
+aws:
+  region: us-east-1
+  sqs:
+    queueUrl: ${AWS_QUEUE_URL}
+  accessKey: ${AWS_ACCESS_KEY}
+  secretKey: ${AWS_SECRET_KEY}
+#  sns:
+#    topicArn: arn:aws:sns:us-east-1:758346259655:sms-pin-topic
+
+app:
+  sqs:
+    polling-interval-ms: 10000  #10 segundos
+
+twilio:
+  accountSid: ${TWILIO_KEY}
+  authToken: ${TWILIO_TOKEN}
+  senderNumber: ${TWILIO_NUMBER}
+
+appDescription: "Messagge API"
+appVersion: "1.0.0"
