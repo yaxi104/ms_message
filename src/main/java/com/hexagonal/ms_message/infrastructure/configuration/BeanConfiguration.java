@@ -6,7 +6,7 @@ import com.hexagonal.ms_message.domain.spi.ISmsSendPort;
 import com.hexagonal.ms_message.domain.spi.ISqsServicePort;
 import com.hexagonal.ms_message.domain.usecase.MessageUseCase;
 import com.hexagonal.ms_message.infrastructure.configuration.aws.AwsProperties;
-import com.hexagonal.ms_message.infrastructure.output.sns.SmsSenderAdapter;
+import com.hexagonal.ms_message.infrastructure.output.sms.SmsSenderAdapter;
 import com.hexagonal.ms_message.infrastructure.output.sqs.SqsServiceAdapter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;

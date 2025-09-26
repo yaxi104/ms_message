@@ -1,4 +1,4 @@
-package com.hexagonal.ms_message.infrastructure.output.sns;
+package com.hexagonal.ms_message.infrastructure.output.sms;
 
 import com.hexagonal.ms_message.domain.model.OrderReadyEvent;
 import com.hexagonal.ms_message.domain.spi.ISmsSendPort;

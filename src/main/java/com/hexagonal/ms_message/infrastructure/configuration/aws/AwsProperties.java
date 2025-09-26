@@ -15,7 +15,6 @@ public class AwsProperties {
     private String accessKey;
     private String secretKey;
     private Sqs sqs;
-//    private Sns sns;
 
     public static class Sqs {
         private String queueUrl;
@@ -29,15 +28,4 @@ public class AwsProperties {
         }
     }
 
-//    public static class Sns {
-//        private String topicArn;
-//
-//        public String getTopicArn() {
-//            return topicArn;
-//        }
-//
-//        public void setTopicArn(String topicArn) {
-//            this.topicArn = topicArn;
-//        }
-//    }
 }
